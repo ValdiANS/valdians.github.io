@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('responsive.css');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  
+  background-image: url('../images/pattern-background-mobile.svg');
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 98%);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 20px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 15px 20px 0px rgba(0,0,0,0.1);
+}
+
+.card-header img {
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px 0;
+  padding: 25px 20px;
+}
+
+.card-content h2 {
+  font-weight: 900;
+  text-align: center;
+}
+
+.card-content p {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  width: 90%;
+}
+
+.price {
+  width: 100%;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  padding: 10px 0;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: space-evenly;
+}
+
+.price .annual-plan{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
+  font-weight: 700;
+}
+
+.price .annual-plan span{
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.price a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.price a:hover {
+  text-decoration: none;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px 0;
+}
+
+.buttons .proceed {
+  width: 100%;
+  color: #f8f2f2;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 0;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  box-shadow: 0px 15px 20px 0px rgba(56,41,224,0.2);
+  -webkit-box-shadow: 0px 15px 20px 0px rgba(56,41,224,0.2);
+  -moz-box-shadow: 0px 15px 20px 0px rgba(56,41,224,0.2);
+}
+
+.buttons .proceed:hover {
+  filter: brightness(140%);
+}
+
+.buttons .cancel {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+
+.buttons .cancel:hover {
+  color: rgb(17, 16, 16);
+}
+
+.attribution {
+  margin: 30px 0 10px;
+}
