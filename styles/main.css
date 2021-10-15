@@ -25,7 +25,6 @@ main {
   font-weight: 500;
   font-size: 1rem;
   max-width: 350px;
-  height: 100px;
   /* background-color: rgb(141, 200, 230); */
   background-color: hsl(200, 33%, 99%);
   border-radius: 10px;
@@ -43,6 +42,10 @@ main {
 .card a {
   width: auto;
   padding: 10px;
+}
+
+.card > span {
+  display: block;
 }
 
 .link {
@@ -117,4 +120,13 @@ ul li a {
 
 ul li a:hover {
 text-decoration-line: underline;
+}
+
+ul li.back {
+  margin: 20px 0;
+}
+
+ul li.back a {
+  width: 100%;
+  text-align: center;
 }
