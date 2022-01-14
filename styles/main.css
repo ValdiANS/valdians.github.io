@@ -71,6 +71,11 @@ main {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.card > #profile .social-media img.linkedin {
+  border-radius: 0;
+  box-shadow: none;
+}
+
 ul {
   width: 100%;
   max-width: 400px;
